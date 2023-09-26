@@ -11,7 +11,7 @@ public class Cliente {
 	private int id;
 	private String nombre;
 	private String apellido;
-	private String corre;
+	private String correo;
 	private String fecha;
 	private String dni;
 	private int categoria;
@@ -19,11 +19,11 @@ public class Cliente {
 	public Cliente() {
 	}
 
-	public Cliente(int id, String nombre, String apellido, String corre, String fecha, String dni, int categoria) {
+	public Cliente(int id, String nombre, String apellido, String correo, String fecha, String dni, int categoria) {
 		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
-		this.corre = corre;
+		this.correo = correo;
 		this.fecha = fecha;
 		this.dni = dni;
 		this.categoria = categoria;
@@ -53,12 +53,12 @@ public class Cliente {
 		this.apellido = apellido;
 	}
 
-	public String getCorre() {
-		return corre;
+	public String getCorreo() {
+		return correo;
 	}
 
-	public void setCorre(String corre) {
-		this.corre = corre;
+	public void setCorre(String correo) {
+		this.correo = correo;
 	}
 
 	public String getFecha() {
@@ -84,9 +84,5 @@ public class Cliente {
 	public void setCategoria(int categoria) {
 		this.categoria = categoria;
 	}
-	
-	
-	
-	
 
 }

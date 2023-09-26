@@ -6,7 +6,9 @@ import org.cibertec.edu.pe.InterfaceService.IClienteService;
 import org.cibertec.edu.pe.entity.Cliente;
 import org.cibertec.edu.pe.interfaces.ICliente;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ClienteService implements IClienteService {
 	
 	@Autowired
@@ -25,5 +27,6 @@ public class ClienteService implements IClienteService {
 		if(!c.equals(null))rpta = 1;
 		return rpta;
 	}
+	
 
 }
